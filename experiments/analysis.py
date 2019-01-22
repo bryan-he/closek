@@ -106,7 +106,7 @@ def summarize_datasets(root=None):
     plt.axis([xmin, xmax, ymin, ymax])
     plt.xlabel("\\# Data Points")
     plt.ylabel("Dimensions")
-    plt.legend(["PMLB", "OpenML", "Fan et al [9]"], loc="best")
+    plt.legend(["PMLB", "OpenML", "Fan et al."], loc="best")
     plt.tight_layout()
 
     if root is not None:
@@ -502,7 +502,7 @@ def simulation(root, xlabel, params, figroot=None, ymin=0.5, ymax=1):
     """
     import matplotlib.pyplot as plt
 
-    method = ["average", "atk", "top", "close"]
+    method = ["close", "atk", "average", "top"]
 
     util.latexify()
     plt.figure(figsize=(1.8, 1.8))
