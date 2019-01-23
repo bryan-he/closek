@@ -18,5 +18,5 @@ Main Experiments
 ----------------
 
 The main experiments can be run with [run_experiments.sh](run_experiments.sh).
-This writes the results into log files in `l/`. The results are
+This writes the results into log files in `log/`. The results are
 parsed by [analysis.py](analysis.py), which generates the figures and tables.

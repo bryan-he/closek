@@ -435,7 +435,7 @@ def comparison(root="log/linear1", epsilon=0.02, figroot=None, degree=1, dataset
     improvement_on = [(ds, improvement_on[ds]) for ds in sorted(improvement_on, key=improvement_on.get, reverse=True)]
 
     # Figure 3a
-    plt.figure(figsize=(1.5, 1.5))
+    plt.figure(figsize=(1.7, 1.7))
     plt.plot([0, 1], [0, 1], color="black", linewidth=1)
     plt.scatter(test_average, test_close, s=1)
     plt.title("")
@@ -449,7 +449,7 @@ def comparison(root="log/linear1", epsilon=0.02, figroot=None, degree=1, dataset
         plt.savefig(figroot + "logistic_improvement.pdf")
 
     # Figure 3b
-    plt.figure(figsize=(1.5, 1.5))
+    plt.figure(figsize=(1.7, 1.7))
     plt.plot([0, 1], [0, 1], color="black", linewidth=1)
     plt.scatter(test_average_hinge, test_close_hinge, s=1)
     plt.title("")
@@ -464,7 +464,7 @@ def comparison(root="log/linear1", epsilon=0.02, figroot=None, degree=1, dataset
 
 
     # Figure 4a
-    plt.figure(figsize=(1.5, 1.5))
+    plt.figure(figsize=(1.7, 1.7))
     plt.hist(selected_k, bins=20)
     plt.title("")
     plt.xlabel("$k^*/n$")
@@ -476,7 +476,7 @@ def comparison(root="log/linear1", epsilon=0.02, figroot=None, degree=1, dataset
         plt.savefig(figroot + "selected_k.pdf")
 
     # Figure 4b
-    plt.figure(figsize=(1.5, 1.5))
+    plt.figure(figsize=(1.7, 1.7))
     plt.scatter(selected_k, test_close - test_average, s=1)
     plt.title("")
     plt.xlabel("$k^*/n$")
